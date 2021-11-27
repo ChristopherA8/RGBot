@@ -36,7 +36,8 @@ module.exports = {
 
     if (
       person.level < curLevel &&
-      msg.channel.id !== "607370415727443986" // admin
+      msg.channel.id !== "607370415727443986" && // admin
+      msg.channel.id !== "743303427484024922" // member appeals
     ) {
       person.level++;
       msg.reply(`You've leveled up to level **${curLevel}**!`);
