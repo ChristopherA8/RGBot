@@ -8,6 +8,7 @@ dotenv.config();
 client.on("ready", () => {
   console.log("[BOT] Logged in as " + client.user.tag);
 
+  client.user.setActivity("/help", { type: "PLAYING" });
   setInterval(() => {
     client.user.setActivity("/help", { type: "PLAYING" });
   }, 60 * 60 * 1000); // 1hr
