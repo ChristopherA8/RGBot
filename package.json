@@ -1,0 +1,26 @@
+{
+  "name": "rgbot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "pm2 start src/index.js --name 'RGBot'",
+    "restart": "pm2 restart RGBot",
+    "stop": "pm2 stop RGBot",
+    "del": "pm2 del RGBot",
+    "log": "pm2 log RGBot"
+  },
+  "keywords": [],
+  "author": "Chr1s",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/builders": "^0.8.2",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@types/node": "^16.11.10",
+    "chalk": "^5.0.0",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.2.0"
+  }
+}
